@@ -8,7 +8,7 @@ El cuadrado sube hasta llegar a los 300 pixeles y luego deciende regresando a su
 ### Tema sobre el evento keypress:
 ![Img. del tema keypress](https://imgur.com/fjplhnQ.png)
 
-[Evento keypress](https://ney.one/javascript-evento-keypress-onkeypress/)
+[Tema:Evento keypress](https://ney.one/javascript-evento-keypress-onkeypress/)
 
 ### Código del evento keypress funcionando:
 
