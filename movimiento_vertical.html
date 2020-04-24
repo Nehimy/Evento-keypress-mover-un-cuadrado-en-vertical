@@ -3,7 +3,7 @@
 		<meta charset="UTF-8">
 		<title>cuadrado</title>
 		<style>			
-			#cuadrado3{
+			#cuadrado{
 				width: 110px;
 				height: 110px;
 				background-color: #ff339c;
@@ -15,35 +15,37 @@
 		</style>
 	</head>
 	<body>
-		<div id="cuadrado3"></div>
+		<p><strong>Recuerda precionar la tecla de espacio o barra espaciadora (una sola vez) para mover el cuadrado.🤓️</strong></p>
+		<div id="cuadrado">
+		</div>
 		<script>
 			var y = 0;
 			//newBotton = document.getElementById('cuadrado3').style.bottom;
 			//Tecla de espacio = 32, 65=a
 			
-			function abajo(){
-				if(y > 0){
-					y = y - 1;
-					document.getElementById('cuadrado3').style.bottom = y + 'px';
-					setTimeout(abajo, 2)			
-				}
-			}
-			
 			function arriba(){
 				if(y < 300){
 					y = y + 1;
-					document.getElementById('cuadrado3').style.bottom = y + 'px';
-					setTimeout(arriba, 2)				
+					document.getElementById('cuadrado').style.bottom = y + 'px';
+					setTimeout(arriba, 5);
 				}else{
-					setTimeout(abajo, 200)	
+					abajo();
+				}
+				
+			}
+			
+			function abajo(){
+				if(y > 0){
+					y = y - 1;
+					document.getElementById('cuadrado').style.bottom = y + 'px';
+					setTimeout(abajo, 5);
 				}
 			}
 						
 			function move(e){
 				if(e.keyCode == '32'){
-					off_arriba = arriba()
+					arriba();
 				}
-
 			}			
 			
 			window.onkeypress = move;
